@@ -1,82 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<meta charset="utf-8">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
-	body{
-		background-color: mediumpurple;
-	}
-	#title{
-		border-radius: 50px;
-		background-color: lightpink;
-		color: blueviolet;
-		width: 350px;
-	}
-	.container1{
-		background-color: lightpink;
-		border-radius: 25px;
-		color: blueviolet;
-		width: 45%;
-		height: auto;
-	}
-	a{
-	text-decoration: none;
-	cursor: pointer;
-	color: blueviolet;
-	}
-	@media (max-width: 600px){
 		body{
-			padding: 50px;
+			background-color: mediumpurple;
 		}
-		.container1{
-			width: 100%;
-			height: auto;
-		}
+
 		#title{
-		width: auto;
-	}
-	}
+			border-radius: 50px;
+			background-color: lightpink;
+			color: blueviolet;
+			text-align: center;
+		}
+
+		.container-1{
+			background-color: lightpink;
+			border-radius: 25px;
+			color: blueviolet;
+			width:  fit-content;
+			height: auto;
+			padding: 1px 10px;
+			margin-bottom: 20px;
+		}
+
+		a {
+			text-decoration: none;
+			cursor: pointer;
+			color: blueviolet;
+		}
+
+		@media (max-width: 600px){
+			body{
+				padding: 50px;
+			}
+
+			#title{
+				width: auto;
+			}
+		}
 	</style>
-	<title>Raj's e-Library</title>
+<title>Raj's e-Library</title>
 </head>
+
 <body>
-		<div id="title" class="container my-3 p-3">
-			<h1 class="text-center">Raj's e-Library</h1>
-		</div>
+	<div class="container p-3">
 		<div class="row">
-		<div class="container container1 my-3 p-3 col-6">
-			<h2 class="text-center">
-				Certified Full-Stack Developer (Module 1)
-			</h2>
-			<ul>
-				<li><a href="https://rajaruban.github.io/e-Library-mod1/Class%20notes%20.pdf">Class Notes</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod1/Prototyping%20with%20Bootstrap%20-%20Bootcamp.pdf">Prototyping with Bootstrap</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod1/VueJS%20+%20Laravel%20Notes.pdf">VueJS and Laravel</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod1/VueJS%20Notes.pdf">Introduction to VueJS</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod1/industry_4.0_module_1_week_1___html___css_challenge__1_.pdf">Introduction to HTML and CSS</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod1/mimos_training__mygov___1_.pdf">Responsive website with Flexbox</a></li>
-			</ul>
-		</div>
-		<div class="container container1 my-3 p-3 col-6">
-			<h2 class="text-center">
-				Certified Full-Stack Developer (Module 2)
-			</h2>
-			<ul>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/ADA_%20Introduction%20to%20MEAN%20Stack.pdf">Introduction to MEAN Stack</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/ada_-_api_with_mongodb_and_express.pdf">Creating a RESTful API with MongoDB and Express</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/Asia%20Developer%20Academy%20-%20REST%20API%20(Challenge%202).pdf">REST API with MongoDB, Express and NodeJS - Part 2</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/Introduction%20to%20MySQL.pdf">Introduction to Database - MySQL</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/lecture_2_-_restful_api__part_1_.pdf">Introduction to Restful API</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/lab_2_-_creating_a_restful_api___2_.pdf">Introduction to Restful API - Part 2</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/Lab3-Creating%20a%20RESTful%20API.pdf">Introduction to Restful API - Part 3</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/ada_-_passport.js__1_.pdf">API Authentication with Passport JS</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/asia_dev_academy_-_authentication__2__with_jwt.pdf">API Authentication with JWT</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/crb_-_git_and_github__2_.pdf">Introduction to Git and Github</a></li>
-				<li><a href="https://rajaruban.github.io/e-Library-mod2/ebook_js.pdf">101 Javacscript
-				Project Ideas e-Book</a></li>
-			</ul>
+			<div class="col-12">
+				<div class="d-flex justify-content-center">
+					<h1 id="title" class="px-3 py-1">Raj's e-Library</h1>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="container-1 card">
+							<h2 class="text-center">
+								Certified Full-Stack Developer (Module 1)
+							</h2>
+							<ul>
+								<li><a href="https://rajaruban.github.io/e-Library-mod1/Class%20notes%20.pdf">Class Notes</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod1/Prototyping%20with%20Bootstrap%20-%20Bootcamp.pdf">Prototyping with Bootstrap</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod1/VueJS%20+%20Laravel%20Notes.pdf">VueJS and Laravel</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod1/VueJS%20Notes.pdf">Introduction to VueJS</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod1/industry_4.0_module_1_week_1___html___css_challenge__1_.pdf">Introduction to HTML and CSS</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod1/mimos_training__mygov___1_.pdf">Responsive website with Flexbox</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="container-1 card">
+							<h2 class="text-center">
+								Certified Full-Stack Developer (Module 2)
+							</h2>
+							<ul>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/ADA_%20Introduction%20to%20MEAN%20Stack.pdf">Introduction to MEAN Stack</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/ada_-_api_with_mongodb_and_express.pdf">Creating a RESTful API with MongoDB and Express</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/Asia%20Developer%20Academy%20-%20REST%20API%20(Challenge%202).pdf">REST API with MongoDB, Express and NodeJS - Part 2</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/Introduction%20to%20MySQL.pdf">Introduction to Database - MySQL</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/lecture_2_-_restful_api__part_1_.pdf">Introduction to Restful API</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/lab_2_-_creating_a_restful_api___2_.pdf">Introduction to Restful API - Part 2</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/Lab3-Creating%20a%20RESTful%20API.pdf">Introduction to Restful API - Part 3</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/ada_-_passport.js__1_.pdf">API Authentication with Passport JS</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/asia_dev_academy_-_authentication__2__with_jwt.pdf">API Authentication with JWT</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/crb_-_git_and_github__2_.pdf">Introduction to Git and Github</a></li>
+								<li><a href="https://rajaruban.github.io/e-Library-mod2/ebook_js.pdf">101 Javacscript
+								Project Ideas e-Book</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="container-1 card">
+							<h2 class="text-center">
+								Certified Full-Stack Developer (Module 3)
+							</h2>
+							<ul>
+								<li><a href="https://rubanero14.github.io/module3-resources/Introduction_to_Mobile_Development.pdf">Introduction to Mobile Application Development</a></li>
+								<li><a href="https://rubanero14.github.io/module3-resources/Introduction_to_Flutter.pdf">Introduction to Flutter</a></li>
+								<li><a href="https://rubanero14.github.io/module3-resources/React_Navigation.pdf">React Native Navigation</a></li>
+								<li><a href="https://rubanero14.github.io/module3-resources/To-Do-App+Navigation.pdf">Making To-Do App with Navigation</a></li>
+								<li><a href="https://rubanero14.github.io/module3-resources/React_Navigation.pdf">React Native Navigation</a></li>
+								<li><a href="https://rubanero14.github.io/module3-resources/Flutter_Training_Notes.pdf">Flutter Training Notes</a></li>
+								<li><a href="https://rubanero14.github.io/module3-resources/HTTP_&_%20API_Call.pdf">HTTP & API Calls</a></li>
+								<li><a href="https://drive.google.com/file/d/1RWTiMt8lpyjORpV9rxio1pY4oeWvXUUK/view?usp=sharing">Flutter Applications Development e-Book</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
